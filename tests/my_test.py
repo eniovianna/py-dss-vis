@@ -5,7 +5,10 @@
 """
 import pytest
 
+from src.py_dss_vis.Line import Line
+
 
 @pytest.fixture
-def tes_00():
-    return True
+def test_line_name():
+    line = Line()
+    assert line.name is "Line"
